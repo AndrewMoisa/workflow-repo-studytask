@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
     "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
-    "test": "vitest"
+    "test:unit": "vitest",
+    "test:e2e": "npx playwright test --ui"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +14,9 @@
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.25.1",
+    "@playwright/test": "^1.52.0",
     "@tailwindcss/cli": "^4.1.4",
+    "@types/node": "^22.14.1",
     "eslint": "^9.25.1",
     "globals": "^16.0.0",
     "prettier": "^3.5.3",
