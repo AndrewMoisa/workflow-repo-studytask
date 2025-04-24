@@ -6,7 +6,8 @@
     "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --watch",
     "build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/style.css --minify",
     "test:unit": "vitest",
-    "test:e2e": "npx playwright test --ui"
+    "test:e2e": "npx playwright test --ui",
+    "start": "live-server --port=5500"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "@types/node": "^22.14.1",
     "eslint": "^9.25.1",
     "globals": "^16.0.0",
+    "live-server": "^1.2.2",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^4.1.4",
